@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="it seems done">
       <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652157224969</updated>
-      <workItem from="1652157227691" duration="5319000" />
+      <workItem from="1652157227691" duration="5683000" />
     </task>
     <task id="LOCAL-00001" summary="add README.MD and Main.java">
       <created>1652157416406</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652163815878</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="it seems done">
+      <created>1652178715597</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178715597</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +129,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="origin/dev" />
                       </list>
                     </value>
                   </entry>
@@ -141,6 +146,7 @@
     <MESSAGE value="added getRandomIntArray" />
     <MESSAGE value="added ArrayElement.java" />
     <MESSAGE value="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex" />
+    <MESSAGE value="it seems done" />
+    <option name="LAST_COMMIT_MESSAGE" value="it seems done" />
   </component>
 </project>
