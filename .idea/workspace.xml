@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="added ArrayElement.java">
+    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" afterDir="false" />
@@ -77,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652157224969</updated>
-      <workItem from="1652157227691" duration="2373000" />
+      <workItem from="1652157227691" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="add README.MD and Main.java">
       <created>1652157416406</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652162927918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex">
+      <created>1652163815878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652163815878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +118,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -121,6 +140,7 @@
     <MESSAGE value="add README.MD and Main.java" />
     <MESSAGE value="added getRandomIntArray" />
     <MESSAGE value="added ArrayElement.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ArrayElement.java" />
+    <MESSAGE value="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex" />
   </component>
 </project>

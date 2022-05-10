@@ -14,6 +14,12 @@ public class ArrayElement {
         this.initialIndex = initialIndex;
     }
 
+    public  ArrayElement(ArrayElement element) {
+        this.value = element.value;
+        this.sortedIndex = element.sortedIndex;
+        this.initialIndex = element.initialIndex;
+    }
+
     public static void sortElements(ArrayElement[] elements, Comparator<ArrayElement> comparator) {
         Arrays.sort(elements, comparator);
     }
