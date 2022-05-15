@@ -5,10 +5,9 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         int[] array = redIntArrayFromConsole();
+        int[] initialArray = new int[array.length];
+        System.arraycopy(array, 0, initialArray, 0, initialArray.length);
 
-        for (int j : array) {
-            System.out.println(j);
-        }
         ArrayElement[] elementsArray = getArrayElementsArray(array);
 
 
@@ -21,9 +20,41 @@ public class Main {
         System.out.println();
 
         System.out.println("Row of Switches:");
-        System.out.println(task(elementsArray));
+        ArrayList<SwitchIndexes> indexes = task(elementsArray);
+        System.out.println(indexes);
+
+        System.out.println();
+
+        printSwitchSorting(initialArray, indexes);
 
     }
+
+    static void printSwitchSorting(int[] initialArray, List<SwitchIndexes> switchIndexes) {
+
+        for (SwitchIndexes switchIndex : switchIndexes) {
+            for (int i = 0; i < initialArray.length; i++) {
+                if (switchIndex.index1 == i || switchIndex.index2 == i) {
+                    System.out.println(initialArray[i] + "* Need to switch");
+                } else {
+                    System.out.println(initialArray[i]);
+                }
+            }
+            System.out.println();
+            switchElemsInIntArray(initialArray, switchIndex.index1, switchIndex.index2);
+
+            for (int i = 0; i < initialArray.length; i++) {
+                if (switchIndex.index1 == i || switchIndex.index2 == i) {
+                    System.out.println(initialArray[i] + "* Switched");
+                } else {
+                    System.out.println(initialArray[i]);
+                }
+            }
+
+            System.out.println("\n-------------\n");
+        }
+    }
+
+
 
     static int[] redIntArrayFromConsole() {
         System.out.println("Enter integer array in one string ");
@@ -70,7 +101,7 @@ public class Main {
         for (int i = 0; i < arrayElements.length; ) {
             int sortedIndex = arrayElements[i].getSortedIndex();
             if (sortedIndex != i) {
-                switchElementsInArr(arrayElements, sortedIndex, i);
+                switchElementsInElemsArr(arrayElements, sortedIndex, i);
                 switches.add(new SwitchIndexes(sortedIndex, i));
             } else {
                 i++;
@@ -79,10 +110,16 @@ public class Main {
         return switches;
     }
 
-    static void switchElementsInArr(ArrayElement[] array, int initialIndex, int finalIndex) {
+    static void switchElementsInElemsArr(ArrayElement[] array, int initialIndex, int finalIndex) {
         ArrayElement temp = new ArrayElement(array[initialIndex]);
         array[initialIndex] = array[finalIndex];
         array[finalIndex] = temp;
+    }
+
+    static void switchElemsInIntArray(int[] array, int index1, int index2) {
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
     }
     static int[] getRandomIntArray(int lengthOfArray) {
         int[] resultArray = new int[lengthOfArray];
