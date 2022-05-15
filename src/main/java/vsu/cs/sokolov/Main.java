@@ -1,35 +1,15 @@
 package vsu.cs.sokolov;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        int[] array = redIntArrayFromConsole();
 
-        Scanner in = new Scanner(System.in);
-        int arrayLength;
-        System.out.print("Enter array length: ");
-        arrayLength = in.nextInt();
-        System.out.println();
-
-        int[] array = getRandomIntArray(arrayLength);
-        ArrayElement[] elementsArray = new ArrayElement[arrayLength];
-
-        for (int i = 0; i < arrayLength; i++) {
-            elementsArray[i] = new ArrayElement(array[i], i);
+        for (int j : array) {
+            System.out.println(j);
         }
-
-        Comparator<ArrayElement> compareViaValue = Comparator.comparingInt(ArrayElement::getValue);
-        Arrays.sort(elementsArray, compareViaValue);
-
-        for (int i = 0; i < arrayLength; i++) {
-            elementsArray[i].setSortedIndex(i);
-        }
-
-        Comparator<ArrayElement> compareViaInitialIndex = Comparator.comparingInt(ArrayElement::getInitialIndex);
-        Arrays.sort(elementsArray, compareViaInitialIndex);
+        ArrayElement[] elementsArray = getArrayElementsArray(array);
 
 
         System.out.println("First column - initial arr, second - value, third - initial Index, fourth - sorted index");
@@ -45,19 +25,58 @@ public class Main {
 
     }
 
-    static String task(ArrayElement[] arrayElements) {
-        StringBuilder switches = new StringBuilder();
+    static int[] redIntArrayFromConsole() {
+        System.out.println("Enter integer array in one string ");
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> array = new ArrayList<>();
+
+        String temp = scanner.nextLine();
+        scanner = new Scanner(temp);
+
+        while (scanner.hasNextInt()) {
+            array.add(scanner.nextInt());
+        }
+
+
+        int[] resultArray = new int[array.size()];
+        for (int i = 0; i < resultArray.length; i++) {
+            resultArray[i] = array.get(i);
+        }
+        return resultArray;
+    }
+
+    static ArrayElement[] getArrayElementsArray(int[] initialArray) {
+        ArrayElement[] elementsArray = new ArrayElement[initialArray.length];
+
+        for (int i = 0; i < initialArray.length; i++) {
+            elementsArray[i] = new ArrayElement(initialArray[i], i);
+        }
+
+        Comparator<ArrayElement> compareViaValue = Comparator.comparingInt(ArrayElement::getValue);
+        Arrays.sort(elementsArray, compareViaValue);
+
+        for (int i = 0; i < initialArray.length; i++) {
+            elementsArray[i].setSortedIndex(i);
+        }
+
+        Comparator<ArrayElement> compareViaInitialIndex = Comparator.comparingInt(ArrayElement::getInitialIndex);
+        Arrays.sort(elementsArray, compareViaInitialIndex);
+        return elementsArray;
+    }
+
+    static ArrayList<SwitchIndexes> task(ArrayElement[] arrayElements) {
+        ArrayList<SwitchIndexes> switches = new ArrayList<>();
 
         for (int i = 0; i < arrayElements.length; ) {
             int sortedIndex = arrayElements[i].getSortedIndex();
             if (sortedIndex != i) {
                 switchElementsInArr(arrayElements, sortedIndex, i);
-                switches.append("switch elem ").append(i).append(" with elem ").append(sortedIndex).append("\n");
+                switches.add(new SwitchIndexes(sortedIndex, i));
             } else {
                 i++;
             }
         }
-        return switches.toString();
+        return switches;
     }
 
     static void switchElementsInArr(ArrayElement[] array, int initialIndex, int finalIndex) {

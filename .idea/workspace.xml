@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="it seems done">
-      <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/ArrayElement.java" afterDir="false" />
+    <list default="true" id="df89c88b-6088-474a-92a1-ebdc1d440c1a" name="Changes" comment="deleted useless code">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/SwitchIndexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Alexandr/IdeaProjects/task.3.23.2022",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,7 +53,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="vsu.cs.sokolov.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vsu.cs.sokolov.Main" />
       <module name="ads.task.4.21_2022" />
       <extension name="coverage">
@@ -63,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.vsu.cs.sokolov.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -76,6 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1652157224969</updated>
       <workItem from="1652157227691" duration="5683000" />
+      <workItem from="1652351504113" duration="34000" />
+      <workItem from="1652614492197" duration="1917000" />
     </task>
     <task id="LOCAL-00001" summary="add README.MD and Main.java">
       <created>1652157416406</created>
@@ -148,5 +156,16 @@
     <MESSAGE value="added comparators in Main.java &#10;1. Sorting via value &#10;2. Sorting via initialIndex" />
     <MESSAGE value="it seems done" />
     <option name="LAST_COMMIT_MESSAGE" value="it seems done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vsu/cs/sokolov/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
